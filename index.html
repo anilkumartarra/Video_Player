@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="inputs">
+        <input type="file" name="files" id="file_left" onchange="upload()">
+        
+        <input type="file" name="vtt_input" id="file_right" >
+    </div>
+    <div class="VideoContainer">
+        <video id="video" controls>
+            <source id="videos" src="">
+            <track label="English" kind="subtitles" srclang="en" id="tr" src="" default />
+        </video>
+    </div>
+    <div class="controls">
+        <!-- <button id="play">
+            <i class="fa fa-play"></i>
+        </button> -->
+        <input type="range" id="playback" value="0">
+        <div class="timer">
+            <span id="videoTime"></span><span id="totalDuration"></span>
+        </div>
+    </div>
+    <div class="video_controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+    </div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>

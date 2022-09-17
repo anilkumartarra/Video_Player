@@ -1,0 +1,128 @@
+:root {
+    --blue: rgba(0, 117, 255, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.VideoContainer {
+    width: 700px;
+    /* height: 400px; */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 60px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 40px;
+}
+
+#video {
+    width: 100%;
+    display: block;
+}
+
+
+.inputs {
+    size: 30px;
+    
+    
+    
+}
+body{
+    background-color: aliceblue;
+}
+.controls {
+    height: 30px;
+    width: 700px;
+    padding: 5px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    bottom: 7rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#playback {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 680px;
+    background-color: var(--blue);
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    margin: 0.5rem;
+}
+
+#playback::-webkit-slider-thumb {
+    outline: none;
+    border: 0;
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playback:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.timer {
+    width: 60px;
+    text-align: center;
+}
+
+#play {
+    width: 25px;
+    border: 0;
+    outline: none;
+    background: none;
+    font-size: 20px;
+
+    margin: 0.5rem;
+    cursor: pointer;
+
+}
+
+
+
+.video_controls {
+    width: 20rem;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 1rem;
+    /* justify-content: space-around; */
+    margin: auto;
+}
+
+.video-controls .main-button {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #111;
+    font-size: 1.4rem;
+
+}
+
+.buttons{
+    align-items: center;
+    position: relative;
+}
